@@ -1,0 +1,14 @@
+.grad {
+  height: 5rem;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#f7e098, white);
+  border-radius: 0.2rem;
+}
+
+.io-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  width: 25rem;
+}

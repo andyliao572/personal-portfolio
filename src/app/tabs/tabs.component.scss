@@ -1,0 +1,26 @@
+.tabs {
+  display: flex;
+  position: static;
+  overflow: hidden;
+  margin-left: 2rem;
+}
+
+.tab {
+  border-bottom: 2.5rem solid lightgray;
+  border-left: 0px solid transparent;
+  border-right: 1.5625rem solid transparent;
+  height: 0;
+  width: 15rem;
+  margin-left: -0.85rem;
+  z-index: auto;
+}
+
+.tab-is-active {
+  border-bottom: 2.5rem solid #f7e098;
+  border-left: 0px solid transparent;
+  border-right: 1.5625rem solid transparent;
+  height: 0;
+  width: 15rem;
+  margin-left: -0.85rem;
+  z-index: 0;
+}

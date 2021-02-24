@@ -1,9 +1,40 @@
-<div class="tabs is-centered">
-    <ul>
-      <li class="has-background-primary"><a>Pictures</a></li>
-      <li class="m-5 box"><a>Music</a></li>
-      <li><a>Videos</a></li>
-      <li><a>Documents</a></li>
-    </ul>
-  </div>
-  
+<div class="tabs">
+  <ul>
+    <li
+      class="tab"
+      [ngClass]="{
+        'tab-is-active': activeTabIndex == 0
+      }"
+      (click)="onTab(0)"
+    >
+      <a>Bigger side projects</a>
+    </li>
+    <li
+      class="tab"
+      [ngClass]="{
+        'tab-is-active': activeTabIndex == 1
+      }"
+      (click)="onTab(1)"
+    >
+      <a>Smaller side projects</a>
+    </li>
+    <li
+      class="tab"
+      [ngClass]="{
+        'tab-is-active': activeTabIndex == 2
+      }"
+      (click)="onTab(2)"
+    >
+      <a>FreeCodeCamp collection</a>
+    </li>
+    <li
+      class="tab"
+      [ngClass]="{
+        'tab-is-active': activeTabIndex == 3
+      }"
+      (click)="onTab(3)"
+    >
+      <a>Mobile side project</a>
+    </li>
+  </ul>
+</div>
